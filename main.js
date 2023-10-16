@@ -22,3 +22,6 @@ function divide(){
     let operator;
     operator = firstNumber / secondNumber; 
 }
+function operate(operator, firstNum, secondNum){
+    
+}
