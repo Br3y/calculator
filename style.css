@@ -9,6 +9,9 @@
     margin-top: 100px;
     width:100%;
 }
+.row-container{
+    line-height: 1.5em;
+}
 h1{
     margin:36px 0;
     font-size: 3rem;
