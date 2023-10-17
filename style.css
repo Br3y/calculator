@@ -2,17 +2,42 @@
     margin:0 auto;
     padding:0;
     box-sizing: border-box;    
+    font-size: 1.1em;
 }
 
 .container{
     text-align: center;
     margin-top: 100px;
-    width:100%;
+    border-radius: 6px;
+    width:380px;
+    height:590px;
+    background-color: #00000030;
+    border:2px solid black;
 }
 .row-container{
-    line-height: 1.5em;
+    margin:3px 0;
+}
+.row-container:nth-child(2) {
+    height:80px;
+    margin:6px 0;
+}
+.row-container:nth-child(2) .display{
+    width:337px;
+    border:1px solid black;
+    border-radius: 3px;
+    height:80px;
+    text-align: right;
+    background-color:white;
+}
+.row-container:nth-child(3) button{
+    width:166px;
+    
+}
+.row-container button{
+    width:80px;
+    height:80px;
 }
 h1{
-    margin:36px 0;
+    padding-top:6px;
     font-size: 3rem;
 }
