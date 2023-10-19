@@ -22,6 +22,8 @@
     margin:6px 0;
 }
 .row-container:nth-child(2) .display{
+    font-size: 2em;
+    padding-top: 10px;
     width:337px;
     border:1px solid black;
     border-radius: 3px;
