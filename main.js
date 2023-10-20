@@ -1,3 +1,10 @@
+// declare variable
+const buttons = document.querySelectorAll("button");
+let display = document.querySelector(".display");
+let num1 = ""
+let num2 = ""
+let isFirstNum = true
+
 // calculation
 function add(num1, num2){
     return num1 + num2
