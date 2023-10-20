@@ -26,5 +26,6 @@ function operate(operator, num1, num2){
 buttons.forEach((button) => {
     button.addEventListener("click", ()=>{
         let btn = button.id
+        operate(btn)
     })
 })
