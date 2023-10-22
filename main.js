@@ -78,6 +78,10 @@ function populateDisplay() {
                     num1 = parseFloat(num1)
                     operator = btnId
                     break;
+                case "=":
+                    num2 = parseFloat(num2)
+                    operate(operator, num1, num2)
+                    break;
             }
         })
     })
