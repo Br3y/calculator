@@ -5,6 +5,13 @@ let num1 = ""
 let num2 = ""
 let isFirstNum = true
 
+// clear/reset function
+function clr() {
+    num1 = ""
+    num2 = ""
+    display.innerText = ""
+}
+
 // calculation
 function add(num1, num2) {
     return num1 + num2
