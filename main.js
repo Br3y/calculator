@@ -29,11 +29,11 @@ function populateDisplay(){
 
             if (!isFirstNum) {
                 num2 += btnId
-                console.log("num2 " + num2 + " ")
+                console.log(` num2 ${num2} `)
                 display.innerText = num2;
             } else {
                 num1 += btnId
-                console.log("num1 " + num1 + " ")
+                console.log(` num2 ${num2} `)
                 display.innerText = num1;
             }
         })
