@@ -36,7 +36,7 @@ function populateDisplay() {
         button.addEventListener("click", () => {
             // assign button.id to btnId
             let btnId = button.id
-            
+
             // condition where to store number
             if (!isFirstNum) {
                 num2 += btnId
@@ -47,10 +47,30 @@ function populateDisplay() {
                 console.log(` num2 ${num2} `)
                 display.innerText = num1;
             }
-            switch(btnId){
+            switch (btnId) {
                 case "clr":
                     isFirstNum = true;
                     clr();
+                    break;
+                case "+":
+                    isFirstNum = false
+                    num1 = parseFloat(num1)
+                    operator = btnId
+                    break;
+                case "-":
+                    isFirstNum = false
+                    num1 = parseFloat(num1)
+                    operator = btnId
+                    break;
+                case "*":
+                    isFirstNum = false
+                    num1 = parseFloat(num1)
+                    operator = btnId
+                    break;
+                case "/":
+                    isFirstNum = false
+                    num1 = parseFloat(num1)
+                    operator = btnId
                     break;
             }
         })
