@@ -23,7 +23,11 @@ function operate(operator, num1, num2){
     
 }
 function populateDisplay(){
-    
+    buttons.forEach((button) =>{
+        button.addEventListener("click", () =>{
+            let btnId = button.id
+        })
+    })
 }
 buttons.forEach((button) => {
     button.addEventListener("click", ()=>{
