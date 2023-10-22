@@ -40,7 +40,9 @@ function populateDisplay() {
                 console.log(` num2 ${num2} `)
                 display.innerText = num1;
             }
-            
+            switch(btnId){
+                
+            }
         })
     })
 }
