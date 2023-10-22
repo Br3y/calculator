@@ -26,6 +26,16 @@ function populateDisplay(){
     buttons.forEach((button) =>{
         button.addEventListener("click", () =>{
             let btnId = button.id
+
+            if (!isFirstNum) {
+                num2 += btnId
+                console.log("num2 " + num2 + " ")
+                display.innerText = num2;
+            } else {
+                num1 += btnId
+                console.log("num1 " + num1 + " ")
+                display.innerText = num1;
+            }
         })
     })
 }
