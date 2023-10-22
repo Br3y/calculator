@@ -41,7 +41,10 @@ function populateDisplay() {
                 display.innerText = num1;
             }
             switch(btnId){
-                
+                case "clr":
+                    isFirstNum = true;
+                    clr();
+                    break;
             }
         })
     })
