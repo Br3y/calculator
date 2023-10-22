@@ -31,6 +31,7 @@ function divide(num1, num2) {
     total = num1 / num2
     return total
 }
+
 // operation
 function operate(operator, num1, num2) {
     switch(operator){
@@ -71,6 +72,7 @@ function populateDisplay() {
                 console.log(` num1 ${num1} `)
                 display.innerText = num1;
             }
+            // condition if operator, clr and equal is click
             switch (btnId) {
                 case "clr":
                     isFirstNum = true;
@@ -105,4 +107,5 @@ function populateDisplay() {
     })
 }
 
+// invoke populateDisplay to make populateDisplay work
 populateDisplay()
