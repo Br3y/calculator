@@ -51,6 +51,7 @@ function operate(operator, num1, num2) {
             display.innerText = total
             break;
     }
+    console.log("total: " + total)
 }
 
 // display on HTML
@@ -67,7 +68,7 @@ function populateDisplay() {
                 display.innerText = num2;
             } else {
                 num1 += btnId
-                console.log(` num2 ${num2} `)
+                console.log(` num1 ${num1} `)
                 display.innerText = num1;
             }
             switch (btnId) {
@@ -103,3 +104,5 @@ function populateDisplay() {
         })
     })
 }
+
+populateDisplay()
