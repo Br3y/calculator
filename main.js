@@ -16,16 +16,20 @@ function clr() {
 
 // calculation
 function add(num1, num2) {
-    return num1 + num2
+    total = num1 + num2
+    return total
 }
 function subtract(num1, num2) {
-    return num1 - num2
+    total = num1 - num2
+    return total
 }
 function multiply(num1, num2) {
-    return num1 * num2
+    total = num1 * num2
+    return total
 }
 function divide(num1, num2) {
-    return num1 / num2
+    total = num1 / num2
+    return total
 }
 // operation
 function operate(operator, num1, num2) {
