@@ -33,7 +33,9 @@ function divide(num1, num2) {
 }
 // operation
 function operate(operator, num1, num2) {
-
+    switch(operator){
+        
+    }
 }
 
 // display on HTML
