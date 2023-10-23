@@ -96,6 +96,8 @@ function populateDisplay() {
                     num1 = parseFloat(num1)
                     num2 = parseFloat(num2)
                     operate(operator, num1, num2)
+                    // when total is returned, assign num1 to total
+                    num1 = total
                     break;
             }
         })
