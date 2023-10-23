@@ -87,6 +87,10 @@ function populateDisplay() {
                     isFirstNum = true;
                     clr();
                     break;
+                case "clr":
+                    isFirstNum = true;
+                    del();
+                    break;
                 case "+":
                     isFirstNum = false
                     operator = btnId
