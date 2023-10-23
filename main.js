@@ -98,6 +98,7 @@ function populateDisplay() {
                     operate(operator, num1, num2)
                     // when total is returned, assign num1 to total
                     num1 = total
+                    num2 = ""
                     break;
             }
         })
