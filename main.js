@@ -78,25 +78,22 @@ function populateDisplay() {
                     break;
                 case "+":
                     isFirstNum = false
-                    num1 = parseFloat(num1)
                     operator = btnId
                     break;
                 case "-":
                     isFirstNum = false
-                    num1 = parseFloat(num1)
                     operator = btnId
                     break;
                 case "*":
                     isFirstNum = false
-                    num1 = parseFloat(num1)
                     operator = btnId
                     break;
                 case "/":
                     isFirstNum = false
-                    num1 = parseFloat(num1)
                     operator = btnId
                     break;
                 case "=":
+                    num1 = parseFloat(num1)
                     num2 = parseFloat(num2)
                     operate(operator, num1, num2)
                     break;
