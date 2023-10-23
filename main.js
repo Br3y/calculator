@@ -34,7 +34,7 @@ function divide(num1, num2) {
 
 // operation
 function operate(operator, num1, num2) {
-    switch(operator){
+    switch (operator) {
         case "+":
             add(num1, num2)
             break;
@@ -47,7 +47,7 @@ function operate(operator, num1, num2) {
         case "/":
             divide(num1, num2)
             break;
-        }
+    }
     display.innerText = total
     console.log("total: " + total)
     return total
@@ -60,6 +60,17 @@ function populateDisplay() {
             // assign button.id to btnId
             let btnId = button.id
 
+            
+            if (!isFirstNum && btnId == "+" || !isFirstNum && btnId == "-" || !isFirstNum && btnId == "*" || !isFirstNum && btnId == "/") {
+                num1 = parseFloat(num1)
+                num2 = parseFloat(num2)
+                operatator = btnId
+                operate(operator, num1, num2)
+                // when total is returned, assign num1 to total
+                num1 = total
+                num2 = ""
+                isFirstNum = true
+            }
             // condition where to store number
             if (!isFirstNum) {
                 num2 += btnId
