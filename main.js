@@ -80,8 +80,8 @@ function populateDisplay() {
             if (!isFirstNum && btnId == "+" || !isFirstNum && btnId == "-" || !isFirstNum && btnId == "*" || !isFirstNum && btnId == "/") {
                 num1 = parseFloat(num1)
                 num2 = parseFloat(num2)
-                operator = btnId
                 operate(operator, num1, num2)
+                operator = btnId
                 // when total is returned, assign num1 to total
                 num1 = total
                 num2 = ""
