@@ -99,6 +99,7 @@ function populateDisplay() {
                     // when total is returned, assign num1 to total
                     num1 = total
                     num2 = ""
+                    isFirstNum = true
                     break;
             }
         })
