@@ -13,7 +13,15 @@ function clr() {
     num2 = ""
     display.innerText = ""
 }
-
+function del(){
+    if(!isFirstNum){
+        num2 = num2.slice(0, -4)
+        display.innerHTML = num2
+    } else {
+        num1 = num1.slice(0, -4)
+        display.innerHTML = num1
+    }
+}
 // calculation
 function add(num1, num2) {
     total = num1 + num2
@@ -95,8 +103,7 @@ function populateDisplay() {
                     isFirstNum = true;
                     clr();
                     break;
-                case "clr":
-                    isFirstNum = true;
+                case "del":
                     del();
                     break;
                 case "+":
