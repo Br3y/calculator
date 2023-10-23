@@ -34,10 +34,12 @@ function divide(num1, num2) {
 
 // operation
 function operate(operator, num1, num2) {
+    // if operator is divide by 0
     if (operator == "/" && num2 === 0 || operator == "/" && num2 === "0") {
         display.innerText = "ERROR"
         return
     }
+    // what operator pick to calculate
     switch (operator) {
         case "+":
             add(num1, num2)
@@ -52,8 +54,10 @@ function operate(operator, num1, num2) {
             divide(num1, num2)
             break;
     }
+    // limit the display output
     display.innerText = total.toFixed(2)
     console.log("total: " + total)
+    // return total value
     return total
 }
 
