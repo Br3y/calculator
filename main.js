@@ -34,6 +34,10 @@ function divide(num1, num2) {
 
 // operation
 function operate(operator, num1, num2) {
+    if (operator == "/" && num2 === 0 || operator == "/" && num2 === "0") {
+        display.innerText = "ERROR"
+        return
+    }
     switch (operator) {
         case "+":
             add(num1, num2)
@@ -72,7 +76,7 @@ function populateDisplay() {
                 isFirstNum = true
             }
             // condition where to store number
-            if (!isFirstNum) {
+            else if (!isFirstNum) {
                 num2 += btnId
                 console.log(` num2 ${num2} `)
                 display.innerText = num2;
