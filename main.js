@@ -93,18 +93,22 @@ function populateDisplay() {
                     break;
                 case "+":
                     isFirstNum = false
+                    num2 = ""
                     operator = btnId
                     break;
                 case "-":
                     isFirstNum = false
+                    num2 = ""
                     operator = btnId
                     break;
                 case "*":
                     isFirstNum = false
+                    num2 = ""
                     operator = btnId
                     break;
                 case "/":
                     isFirstNum = false
+                    num2 = ""
                     operator = btnId
                     break;
                 case "=":
@@ -113,7 +117,6 @@ function populateDisplay() {
                     operate(operator, num1, num2)
                     // when total is returned, assign num1 to total
                     num1 = total
-                    num2 = ""
                     isFirstNum = true
                     break;
             }
