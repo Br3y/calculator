@@ -48,7 +48,7 @@ function operate(operator, num1, num2) {
             divide(num1, num2)
             break;
     }
-    display.innerText = total
+    display.innerText = total.toFixed(2)
     console.log("total: " + total)
     return total
 }
@@ -64,7 +64,7 @@ function populateDisplay() {
             if (!isFirstNum && btnId == "+" || !isFirstNum && btnId == "-" || !isFirstNum && btnId == "*" || !isFirstNum && btnId == "/") {
                 num1 = parseFloat(num1)
                 num2 = parseFloat(num2)
-                operatator = btnId
+                operator = btnId
                 operate(operator, num1, num2)
                 // when total is returned, assign num1 to total
                 num1 = total
