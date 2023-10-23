@@ -50,6 +50,7 @@ function operate(operator, num1, num2) {
         }
     display.innerText = total
     console.log("total: " + total)
+    return total
 }
 
 // display on HTML
