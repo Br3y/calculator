@@ -60,7 +60,7 @@ function populateDisplay() {
             // assign button.id to btnId
             let btnId = button.id
 
-            
+            // condition when second number and operator is pick
             if (!isFirstNum && btnId == "+" || !isFirstNum && btnId == "-" || !isFirstNum && btnId == "*" || !isFirstNum && btnId == "/") {
                 num1 = parseFloat(num1)
                 num2 = parseFloat(num2)
